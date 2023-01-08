@@ -1,6 +1,7 @@
 :root {
   --color-cyan-light: hsl(193, 38%, 86%);
   --color-green: hsl(150, 100%, 66%);
+  --color-light-green: hsl(150, 100%, 80%);
   --color-gray-blue-1: hsl(217, 19%, 38%);
   --color-gray-blue-2: hsl(217, 19%, 24%);
   --color-dark-blue: hsl(218, 23%, 16%);
@@ -90,6 +91,12 @@ body {
   background-image: url("../images/icon-dice.svg");
   background-repeat: no-repeat;
   background-position: center;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.advice__button:hover {
+  background-color: var(--color-light-green);
 }
 
 @keyframes spinLoader {
