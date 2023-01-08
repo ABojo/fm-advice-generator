@@ -38,13 +38,13 @@ body {
   color: var(--color-green);
   text-transform: uppercase;
   letter-spacing: 0.3rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .advice__text {
   font-size: 1.75rem;
   color: var(--color-cyan-light);
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 
 .advice__divider > source,
