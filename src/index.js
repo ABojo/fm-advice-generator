@@ -2,13 +2,13 @@ import api from "./utils/api/index";
 import displayController from "./utils/displayController/index";
 
 async function setNewAdvice() {
-  displayController.startLoading();
+  displayController.toggleLoading();
 
   const advice = await api.getRandomAdvice();
   displayController.setAdviceNumber(advice.id);
   displayController.setAdviceText(advice.advice);
 
-  displayController.stopLoading();
+  displayController.toggleLoading();
 }
 
 function init() {

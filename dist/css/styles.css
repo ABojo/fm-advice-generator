@@ -33,6 +33,29 @@ body {
   position: relative;
 }
 
+.advice--loading > * {
+  visibility: hidden;
+}
+
+.advice__loader {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1rem solid var(--color-dark-blue);
+  border-top: 1rem solid var(--color-green);
+  border-radius: 50%;
+  width: 7rem;
+  height: 7rem;
+  animation: spinLoader 1s linear infinite;
+}
+
+.advice--loading > .advice__loader {
+  visibility: visible;
+  display: block;
+}
+
 .advice__heading {
   font-size: 0.8rem;
   color: var(--color-green);
@@ -65,4 +88,13 @@ body {
   background-image: url("../images/icon-dice.svg");
   background-repeat: no-repeat;
   background-position: center;
+}
+
+@keyframes spinLoader {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
 }
