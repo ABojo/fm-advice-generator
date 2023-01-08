@@ -15,3 +15,54 @@
 html {
   font-family: "Manrope", sans-serif;
 }
+
+body {
+  min-height: 100vh;
+  background-color: var(--color-dark-blue);
+  display: grid;
+  place-content: center;
+}
+
+.advice {
+  background-color: var(--color-gray-blue-2);
+  padding: 3rem;
+  padding-bottom: 4rem;
+  border-radius: 1rem;
+  text-align: center;
+  max-width: 34rem;
+  position: relative;
+}
+
+.advice__heading {
+  font-size: 0.8rem;
+  color: var(--color-green);
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  margin-bottom: 2rem;
+}
+
+.advice__text {
+  font-size: 1.75rem;
+  color: var(--color-cyan-light);
+  margin-bottom: 2rem;
+}
+
+.advice__divider > source,
+.advice__divider > img {
+  width: 100%;
+}
+
+.advice__button {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 4rem;
+  height: 4rem;
+  border-radius: 100%;
+  border: none;
+  background-color: var(--color-green);
+  background-image: url("../images/icon-dice.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
