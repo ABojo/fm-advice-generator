@@ -99,6 +99,10 @@ body {
   background-color: var(--color-light-green);
 }
 
+.hidden {
+  visibility: hidden;
+}
+
 @keyframes spinLoader {
   0% {
     transform: translate(-50%, -50%) rotate(0deg);

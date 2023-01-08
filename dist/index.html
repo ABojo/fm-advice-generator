@@ -19,7 +19,7 @@
     <title>Frontend Mentor | Advice generator app</title>
   </head>
   <body>
-    <div class="advice">
+    <main class="advice">
       <div class="advice__loader"></div>
       <h1 class="advice__heading">
         Advice #<span class="advice__number">117</span>
@@ -33,10 +33,12 @@
           media="(max-width: 26.5625em)"
           srcset="./images/pattern-divider-mobile.svg"
         />
-        <img src="./images/pattern-divider-desktop.svg" />
+        <img src="./images/pattern-divider-desktop.svg" alt="Advice divider" />
       </picture>
-      <button class="advice__button"></button>
-    </div>
+      <button class="advice__button">
+        <span class="hidden">Get new advice</span>
+      </button>
+    </main>
     <script src="./js/bundle.js"></script>
   </body>
 </html>
